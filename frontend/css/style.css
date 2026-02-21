@@ -1,0 +1,11 @@
+body { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+@keyframes marquee {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-60%); }
+}
+.animate-marquee { animation: marquee 15s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #003366; }
