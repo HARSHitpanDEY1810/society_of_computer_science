@@ -1,4 +1,4 @@
->>>>>>> main
+
 =======
 # Computer Science Society | IERT Prayagraj
 
