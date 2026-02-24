@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Society | IERT Prayagraj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+        @keyframes marquee {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-60%); }
+        }
+        .animate-marquee { animation: marquee 15s linear infinite; }
+        .animate-marquee:hover { animation-play-state: paused; }
+
+        /* Professional Desktop Dropdown Styling */
+        @media (min-width: 768px) {
+            .group:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+            .dropdown-menu {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(10px);
+                transition: all 0.3s ease;
+                min-width: 240px; /* Increased for professional text spacing */
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+                border-top: 3px solid #003366;
+            }
+        }
+
+        /* Mobile Dropdown Styling: Natural expansion */
+        @media (max-width: 767px) {
+            .dropdown-menu {
+                position: static !important;
+                width: 100% !important;
+                box-shadow: none !important;
+                background-color: #002244 !important; /* Darker blue for contrast */
+                display: none;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            .group:hover .dropdown-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="bg-gray-100 border-b border-gray-300 py-1 px-4 md:px-20 flex justify-between text-[11px] text-gray-700">
+        <div class="flex space-x-4">
+            <span>Text Size: <button class="hover:underline text-xs">A-</button> <button class="hover:underline font-bold text-xs">A</button> <button class="hover:underline text-xs">A+</button></span>
+            <span class="border-l border-gray-400 pl-4">English | हिन्दी</span>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <a href="#" class="hover:underline">Screen Reader Access</a>
+            <a href="#" class="hover:underline border-l border-gray-400 pl-4">Skip to main content</a>
+        </div>
+    </div>
+
+    <header class="bg-white py-4 px-4 md:px-20 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <img src="https://iertentrance.in/favicon.png" alt="IERT Logo" class="max-h-full object-contain">
+            </div>
+            <div>
+                <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight uppercase">Computer Science Society</h1>
+                <p class="text-xs md:text-sm text-gray-600 font-semibold uppercase tracking-wide">Institute of Engineering and Rural Technology, Prayagraj</p>
+            </div>
+        </div>
+        <div class="mt-4 md:mt-0 text-center md:text-right">
+            <span class="text-xs font-bold text-gray-500 uppercase">Department of Computer Science & Engineering</span>
+        </div>
+    </header>
+
+    <nav class="bg-[#003366] text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 md:px-20">
+            <div class="md:hidden flex justify-between items-center py-3">
+                <span class="font-bold text-xs uppercase tracking-widest text-yellow-400"></span>
+                <button onclick="toggleMenu()" class="text-2xl focus:outline-none p-1 border border-white/20 rounded">☰</button>
+            </div>
+
+            <ul id="navMenu" class="hidden md:flex flex-col md:flex-row md:flex-wrap items-stretch py-0 md:py-0 text-[11px] font-bold uppercase tracking-wider">
+                <li class="py-4 md:py-3 px-4 hover:text-yellow-400 hover:bg-blue-900 md:hover:bg-transparent cursor-pointer border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800 transition-colors">Home</li>
+
+                <li class="relative group border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800">
+                    <span class="py-4 md:py-3 px-4 hover:text-yellow-400 cursor-pointer flex items-center justify-between transition-colors">
+                        About Us <span class="ml-1 text-[8px]">▼</span>
+                    </span>
+                    <ul class="dropdown-menu absolute left-0 bg-white text-gray-800 z-50">
+                        <li class="border-b border-gray-100">
+                            <a href="#About Society" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">About Society</a>
+                        </li>
+                        <li class="border-b border-gray-100">
+                            <a href="#vision" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Vision & Mission</a>
+                        </li>
+                        <li>
+                            <a href="#structure" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Organizational Structure</a>
+                        </li>
+                        <li>
+                            <a href="#Contibutors" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Contibutors</a>
+                        </li>
+                        <li>
+                            <a href="Faculty" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Faculty Profile</a>
+                        </li>
+        
+                    </ul>
+                </li>
+
+                <li class="py-4 md:py-3 px-4 hover:text-yellow-400 hover:bg-blue-900 md:hover:bg-transparent cursor-pointer border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800 transition-colors">Constitution</li>
+
+                <li class="relative group border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800">
+                    <span class="py-4 md:py-3 px-4 hover:text-yellow-400 cursor-pointer flex items-center justify-between transition-colors">
+                        Committee <span class="ml-1 text-[8px]">▼</span>
+                    </span>
+                    <ul class="dropdown-menu absolute left-0 bg-white text-gray-800 z-50">
+                        <li class="border-b border-gray-100">
+                            <a href="#Advisory Committee" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Advisory Committee</a>
+                        </li>
+                        <li>
+                            <a href="#Executive Committee" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Executive Committee</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="py-4 md:py-3 px-4 hover:text-yellow-400 hover:bg-blue-900 md:hover:bg-transparent cursor-pointer border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800 transition-colors">Events</li>
+
+                <li class="relative group border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800">
+                    <span class="py-4 md:py-3 px-4 hover:text-yellow-400 cursor-pointer flex items-center justify-between transition-colors">
+                        Academics <span class="ml-1 text-[8px]">▼</span>
+                    </span>
+                    <ul class="dropdown-menu absolute left-0 bg-white text-gray-800 z-50">
+                        <li class="border-b border-gray-100">
+                            <a href="https://aktu.ac.in/syllabus.html" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="#Academic Calender" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Academic Calendar</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="relative group border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800">
+                    <span class="py-4 md:py-3 px-4 hover:text-yellow-400 cursor-pointer flex items-center justify-between transition-colors">
+                        E-Connect <span class="ml-1 text-[8px]">▼</span>
+                    </span>
+                    <ul class="dropdown-menu absolute left-0 bg-white text-gray-800 z-50">
+                        <li class="border-b border-gray-100">
+                            <a href="https://nptel.ac.in/" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">NPTEL</a>
+                        </li>
+                        <li class="border-b border-gray-100">
+                            <a href="https://swayam.gov.in/" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">SWAYAM</a>
+                        </li>
+                        <li>
+                            <a href="https://www.aicte.gov.in/" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">AICTE</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="py-4 md:py-3 px-4 hover:text-yellow-400 hover:bg-blue-900 md:hover:bg-transparent cursor-pointer border-b md:border-b-0 md:border-r border-white/10 md:border-blue-800 transition-colors">Photo Gallery</li>
+                <li class="py-4 md:py-3 px-4 hover:text-yellow-400 hover:bg-blue-900 md:hover:bg-transparent cursor-pointer transition-colors">More</li>
+            </ul>
+        </div>
+    </nav>
+    
+<nav class="bg-[#003366] text-white sticky top-0 z-[1000] shadow-md">
+    </nav>
+
+<div class="bg-[#f2f2f2] border-b-2 border-gray-300 w-full sticky top-[52px] z-[500] shadow-sm">
+    <div class="w-full px-6 md:px-20 py-1.5 text-[10px] sm:text-xs text-gray-700 uppercase tracking-widest font-bold flex items-center gap-2">
+        <a href="index.html" class="hover:text-blue-800 underline transition-all">Home</a> 
+        
+    </div>
+</div>
+
+<main class="w-full bg-white min-h-[70vh] flex items-center justify-center py-20 px-6 overflow-x-hidden">
+    <div class="max-w-3xl w-full text-center">
+        
+        <div class="inline-flex items-center justify-center w-24 h-24 bg-blue-50 rounded-full border-2 border-blue-100 mb-8 relative">
+            <svg class="w-12 h-12 text-[#003366] animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+            <div class="absolute -top-1 -right-1 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                <span class="text-white text-[10px] font-bold">!</span>
+            </div>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl font-serif font-black text-[#003366] uppercase tracking-tighter mb-4">
+            Page is Under Development
+        </h1>
+        
+        <div class="w-24 h-1.5 bg-yellow-500 mx-auto mb-8 rounded-full"></div>
+
+       
+       
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="home.html" class="px-8 py-3 bg-[#003366] text-white text-xs font-bold uppercase rounded shadow-lg hover:bg-blue-800 transition-all tracking-widest">
+                Return to Home Page
+            </a>
+          
+        </div>
+    </div>
+</main>
+
+
+     <script>
+    // --- CONFIGURATION ---
+    const menu = document.getElementById("navMenu");
+    const sidebar = document.getElementById("sidebar");
+    
+    // Safety lock variables
+    let isInteracting = false; 
+
+    // --- 1. MAIN HAMBURGER TOGGLE (UPDATED) ---
+    function toggleMenu() {
+        // Toggle the visibility of the main navigation container
+        const isMenuHidden = menu.classList.toggle("hidden");
+        
+        // SYNC SIDEBAR & RESET DROPDOWNS
+        if (!isMenuHidden) {
+            // CASE: Menu is OPENING
+            // Hide Sidebar (to maintain clean mobile view)
+            if (sidebar) sidebar.classList.add("hidden");
+        } else {
+            // CASE: Menu is CLOSING
+            // 1. Bring back the sidebar
+            if (sidebar) sidebar.classList.remove("hidden");
+
+            // 2. NEW: Close all internal open dropdowns
+            // This finds every dropdown that has 'mobile-open' and removes it
+            const openDropdowns = document.querySelectorAll('.dropdown-menu.mobile-open');
+            openDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('mobile-open');
+            });
+        }
+        
+        // Safety lock to prevent "double-firing" or immediate closing
+        isInteracting = true;
+        setTimeout(() => {
+            isInteracting = false;
+        }, 500);
+    }
+
+    // --- 2. INTERACTION SAFETY LOCK ---
+    if (menu) {
+        menu.addEventListener('click', function(e) {
+            isInteracting = true;
+            setTimeout(() => {
+                isInteracting = false;
+            }, 1000); 
+        });
+    }
+
+    // --- 3. SCROLL AUTO-CLOSE LOGIC ---
+    window.addEventListener("scroll", function() {
+        if (window.innerWidth < 768 && !menu.classList.contains("hidden") && !isInteracting) {
+            
+            // 1. Close the Main Menu
+            menu.classList.add("hidden");
+            
+            // 2. Bring back the Sidebar
+            if (sidebar) sidebar.classList.remove("hidden");
+            
+            // 3. NEW: Also reset internal dropdowns on scroll close
+            const openDropdowns = document.querySelectorAll('.dropdown-menu.mobile-open');
+            openDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('mobile-open');
+            });
+        }
+    });
+
+    // --- 4. RESIZE HANDLER ---
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+            // Desktop: Show menu, Show sidebar
+            menu.classList.remove("hidden");
+            if (sidebar) sidebar.classList.remove("hidden");
+            
+            // Optional: Clean up mobile classes if resizing to desktop
+            const openDropdowns = document.querySelectorAll('.dropdown-menu.mobile-open');
+            openDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('mobile-open');
+            });
+        } else {
+            // Mobile: Hide menu by default, Ensure sidebar is visible
+            menu.classList.add("hidden");
+            if (sidebar) sidebar.classList.remove("hidden");
+        }
+    });
+
+    // --- 5. SIDEBAR SCROLL ANIMATION (Desktop Only) ---
+    document.addEventListener("DOMContentLoaded", function() {
+        if (sidebar) {
+            window.addEventListener("scroll", function() {
+                if (window.innerWidth >= 1024) { 
+                    if (window.scrollY > 150) {
+                        sidebar.classList.remove("lg:w-[300px]", "xl:w-[350px]");
+                        sidebar.classList.add("lg:w-0", "opacity-0", "-translate-x-full");
+                    } else {
+                        sidebar.classList.remove("lg:w-0", "opacity-0", "-translate-x-full");
+                        sidebar.classList.add("lg:w-[300px]", "xl:w-[350px]");
+                    }
+                }
+            });
+        }
+    });
+
+    // --- 6. AUTO SLIDER (If present) ---
+    let index = 0;
+    const slides = document.getElementById('slider');
+    if(slides) {
+        function moveSlide() {
+            index = (index + 1) % 3;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+        setInterval(moveSlide, 5000);
+    }
+</script>
+ <footer class="relative bg-gray-900 text-gray-300 pt-10 pb-6 border-t-4 border-blue-600 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none" aria-hidden="true">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-6 pb-6">
+            
+            <div class="lg:col-span-4">
+                <h4 class="text-lg font-bold mb-3 uppercase tracking-wider flex items-center gap-2">
+                    <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                        CS Society IERT
+                    </span>
+                </h4>
+                <p class="text-gray-400 leading-relaxed pr-4 text-xs mb-4">
+                    The official Computer Science Society of the Institute of Engineering and Rural Technology, Prayagraj. Dedicated to fostering technical excellence, coding culture, and innovation.
+                </p>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-gray-400 hover:text-white bg-gray-800 p-2 rounded-full hover:bg-[#0077b5] transition-all" aria-label="LinkedIn">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white bg-gray-800 p-2 rounded-full hover:bg-gray-600 transition-all" aria-label="GitHub">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <h5 class="text-xs font-bold mb-4 uppercase tracking-wide text-white">Quick Links</h5>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Home</a></li>
+                    <li><a href="https://iert.ac.in/" class="text-gray-400 hover:text-blue-400 transition-all inline-block">IERT</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Society Constitution</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Committee Members</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3">
+                <h5 class="text-xs font-bold mb-4 uppercase tracking-wide text-white">Explore</h5>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">About Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Our Team & Committees</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Event Gallery</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">FAQ & Support</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3">
+                <h5 class="text-xs font-bold mb-4 uppercase tracking-wide text-white">Reach Out</h5>
+                <ul class="space-y-3 text-xs text-gray-400 mb-4">
+                    <li class="flex items-start gap-2">
+                        <div class="bg-gray-800 p-1 rounded mt-0.5">
+                            <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.242-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <span>26-Chaitham Lines<br>Prayagraj, UP 211001</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <div class="bg-gray-800 p-1 rounded">
+                            <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <a href="mailto:contact@cssociety.iert.in" class="hover:text-blue-400 transition-colors">contact@cssociety.iert.in</a>
+                    </li>
+                </ul>
+
+                
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 mt-2 pt-4 border-t border-gray-800/80 flex justify-center items-center text-[10px] sm:text-xs text-gray-500 tracking-wider uppercase text-center">
+            <p>Designed & Developed by <span class="text-gray-300 font-bold">Harshit Pandey, Harshit Tripathi & Team</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

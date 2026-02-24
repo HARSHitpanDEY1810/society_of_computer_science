@@ -57,39 +57,22 @@
 
 <body class="bg-gray-50">
 
-   <header class="bg-white py-3 px-4 md:px-20 border-b border-gray-100">
-    <div class="max-w-full mx-auto flex items-center">
-        
-        <div class="flex items-center space-x-3">
-            <div class="w-12 h-12 md:w-20 md:h-20 flex-shrink-0">
-                <img src="https://iertentrance.in/favicon.png" alt="IERT Logo" class="w-full h-full object-contain">
+    
+
+    <header class="bg-white py-4 px-4 md:px-20 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+                <img src="https://iertentrance.in/favicon.png" alt="IERT Logo" class="max-h-full object-contain">
             </div>
-            
-            <div class="flex flex-col min-w-0">
-                <h1 class="text-base md:text-2xl font-bold text-blue-900 uppercase leading-tight">
-                    Computer Science Society
-                </h1>
-                
-                <p class="text-[9px] sm:text-xs md:text-sm text-gray-600 font-bold uppercase tracking-tight whitespace-nowrap">
-                    Institute of Engineering and Rural Technology, Prayagraj
-                </p>
-                
-                <span class="block md:hidden text-[9px] font-bold text-blue-600 uppercase mt-0.5">
-                    Dept. of Computer Science & Engineering
-                </span>
+            <div>
+                <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight uppercase">Computer Science Society</h1>
+                <p class="text-xs md:text-sm text-gray-600 font-semibold uppercase tracking-wide">Institute of Engineering and Rural Technology, Prayagraj</p>
             </div>
         </div>
-
-        <div class="flex-grow"></div>
-
-        <div class="hidden md:block text-right">
-             <span class="text-[10px] lg:text-xs font-bold text-blue-600 uppercase tracking-widest border-l border-gray-300 pl-4">
-                Department of Computer Science & Engineering
-            </span>
+        <div class="mt-4 md:mt-0 text-center md:text-right">
+            <span class="text-xs font-bold text-gray-500 uppercase">Department of Computer Science & Engineering</span>
         </div>
-        
-    </div>
-</header>
+    </header>
 
  <nav class="bg-[#003366] text-white sticky top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-4 md:px-20">
@@ -107,16 +90,16 @@
                 </span>
                 <ul class="dropdown-menu absolute left-0 bg-white text-white md:text-gray-800 z-50">
                     <li class="border-b border-white/10 md:border-gray-100">
-                        <a href="aboutsociety.html" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">About Society</a>
+                        <a href="#About Society" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">About Society</a>
                     </li>
                     <li class="border-b border-white/10 md:border-gray-100">
-                        <a href="visionandmission.html" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Vision & Mission</a>
+                        <a href="#vision" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Vision & Mission</a>
                     </li>
                     <li class="border-b border-white/10 md:border-gray-100">
-                        <a href="pageunderdevelopment.html" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Organizational Structure</a>
+                        <a href="#structure" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Organizational Structure</a>
                     </li>
                     <li class="border-b border-white/10 md:border-gray-100">
-                        <a href="facultyprofiles.html" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Faculty Profiles</a>
+                        <a href="#Faculty" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Faculty Profiles</a>
                     </li>
                     <li>
                         <a href="contributors.html" class="block px-6 py-3 text-xs hover:bg-blue-900 hover:text-white transition-all hover:pl-8">Contributors</a>
@@ -178,12 +161,11 @@
         </ul>
     </div>
 </nav>
-    
-   <div class="bg-[#f2f2f2] border-b border-gray-300 w-full sticky top-[60px] md:top-[40px] z-40">
+<div class="bg-[#f2f2f2] border-b border-gray-300 w-full sticky top-[60px] md:top-[40px] z-40">
     <div class="w-full px-6 md:px-20 py-1.5 text-[10px] sm:text-xs text-gray-700 uppercase tracking-widest font-bold">
         <a href="index.html" class="hover:text-blue-800 underline transition-all cursor-pointer">Home</a> 
         <span class="mx-1 text-gray-400">/</span> About Us 
-        <span class="mx-1 text-gray-400">/</span> <span class="text-[#003366]">Contributors</span>
+        <span class="mx-1 text-gray-400">/</span> <span class="text-[#003366]">Vision & Mission</span>
     </div>
 </div>
 
@@ -195,10 +177,15 @@
             <li class="border-l-4 border-transparent hover:border-yellow-500 hover:bg-[#001a33] transition-all group">
                 <a href="about.html" class="block px-8 py-5 border-b border-white/5 group-hover:pl-10 group-hover:text-white transition-all">About Society</a>
             </li>
-             <li class="border-l-4 border-transparent hover:border-yellow-500 hover:bg-[#001a33] transition-all group">
-                <a href="vision.html" class="block px-8 py-5 border-b border-white/5 group-hover:pl-10 group-hover:text-white transition-all">Vission & Mission</a>
-            </li>
             
+            <li class="bg-[#00152b] border-l-4 border-yellow-500 shadow-md">
+                <a href="visionandmission.html" class="flex items-center justify-between px-8 py-5 text-white w-full">
+                    <span>Vision & Mission</span>
+                    <svg class="w-4 h-4 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </li>
 
             <li class="border-l-4 border-transparent hover:border-yellow-500 hover:bg-[#001a33] transition-all group">
                 <a href="structure.html" class="block px-8 py-5 border-b border-white/5 group-hover:pl-10 group-hover:text-white transition-all">Organizational Structure</a>
@@ -206,233 +193,131 @@
             <li class="border-l-4 border-transparent hover:border-yellow-500 hover:bg-[#001a33] transition-all group">
                 <a href="FacultyProfile.html" class="block px-8 py-5 border-b border-white/5 group-hover:pl-10 group-hover:text-white transition-all">Faculty Profiles</a>
             </li>
-             <li class="bg-[#00152b] border-l-4 border-yellow-500 shadow-md">
-                <a href="contributors.html" class="flex items-center justify-between px-8 py-5 text-white w-full">
-                    <span>Contributors</span>
-                    <svg class="w-4 h-4 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+            <li class="border-l-4 border-transparent hover:border-yellow-500 hover:bg-[#001a33] transition-all group">
+                <a href="Contributors.html" class="block px-8 py-5 border-b border-white/5 group-hover:pl-10 group-hover:text-white transition-all">Contributors</a>
             </li>
         </ul>
     </nav>
 </aside>
 
-<article id="main-content-area" class="flex-1 px-4 md:px-16 lg:px-24 xl:px-32 py-12 md:py-16 transition-all duration-500 ease-in-out flex justify-center bg-[#f8fafc]">
-    
-    <div class="w-full max-w-5xl transition-all duration-500">
+<section class="flex-1 bg-[#f8fafc] overflow-y-auto">
+    <div class="max-w-5xl mx-auto px-6 py-10 md:px-12">
         
-        <div class="flex justify-between items-center mb-8">
-            <div>
-                <h2 class="text-[#003366] text-3xl font-bold uppercase tracking-wider">Contributors</h2>
-                <div class="h-1 w-20 bg-yellow-500 mt-2 rounded-full"></div> 
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-[#003366] mb-4 uppercase tracking-tight">Organizational Structure</h2>
+            <div class="w-20 h-1.5 bg-yellow-500 rounded-full mb-6"></div>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                [cite_start]Our society is built on a foundation of mentorship and collaborative governance[cite: 8, 11]. [cite_start]Every level of our structure is designed to support student innovation and ensure the holistic development of our members[cite: 10].
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-blue-50 text-[#003366] rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#003366]">Institutional Patronage</h3>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    [cite_start]Guided by the <strong>Director of the Institute</strong> as our Patron, the society benefits from high-level institutional support and strategic vision[cite: 21, 23]. [cite_start]This mentorship ensures our activities remain a cornerstone of IERT’s academic culture[cite: 23].
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-yellow-50 text-yellow-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#003366]">Departmental Leadership</h3>
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    [cite_start]The <strong>Head of the Department (CSE)</strong> serves as our Chairperson, providing a vital bridge between the student body and the faculty[cite: 27, 30]. [cite_start]Their advisory role helps refine our initiatives to meet professional and industry standards[cite: 29, 31].
+                </p>
             </div>
         </div>
 
-        <div class="space-y-12">
+        <div class="bg-[#002244] p-8 rounded-2xl shadow-lg text-white mb-12">
+            <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                The Advisory Committee
+            </h3>
+            <p class="text-blue-100 text-sm leading-relaxed mb-6">
+                [cite_start]Comprised of the Patron, HOD, Deputy Registrar, and six senior faculty nominees, this expert group ensures that the society operates with integrity and long-term stability[cite: 82, 83, 84, 85].
+            </p>
+            [cite_start]<div class="inline-block px-4 py-2 bg-white/10 rounded-full text-[10px] font-bold uppercase tracking-widest">Expert Consultation & Adjudication [cite: 80]</div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+            <h3 class="text-2xl font-bold text-[#003366] mb-6">The Executive Committee</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-8">
+                [cite_start]The Executive Committee is the driving force of our society, where student leaders from all years represent their peers and spearhead innovation[cite: 33, 131].
+            </p>
             
-            <section>
-                <h3 class="text-[#002244] text-lg font-bold uppercase tracking-wide mb-6">
-                    Developed by
-                </h3>
-                
-                <div class="space-y-6">
-                    <div class="bg-white rounded-lg flex flex-col md:flex-row shadow-md border border-gray-200 hover:shadow-lg transition-shadow p-0">
-                        <div class="w-full md:w-44 h-64 md:h-auto shrink-0 bg-gray-50 flex items-center justify-center relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none md:rounded-bl-lg overflow-hidden">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQHknr7eSaqo8Q/profile-displayphoto-scale_200_200/B56ZyCDsLXKAAc-/0/1771708533799?e=1773273600&v=beta&t=h-NEC0VxlKRXEGqhz04BWHuqSZ0pbWWtxrXJg68xc0o" 
-                                 alt="Harshit Pandey" 
-                                 class="w-full h-full object-contain md:object-cover">
-                        </div>
-                        <div class="p-4 md:p-8 text-sm flex-1 flex flex-col justify-center">
-                            <h4 class="text-[#003366] text-xl font-bold mb-3 uppercase">Harshit Pandey</h4>
-                            <div class="space-y-2 text-gray-600">
-                                <p><span class="font-bold text-[#002244]">Batch:</span> 2022-2026</p>
-                                <p><span class="font-bold text-[#002244]">Email:</span> harshitpandey6051@gmail.com</p>
-                                <p><span class="font-bold text-[#002244]">LinkedIn:</span> <a href="https://www.linkedin.com/in/harshit-pandey-8b37173b2/" class="text-blue-600 hover:text-blue-800 font-semibold hover:underline">View Profile</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-lg flex flex-col md:flex-row shadow-md border border-gray-200 hover:shadow-lg transition-shadow p-0">
-                        <div class="w-full md:w-44 h-64 md:h-auto shrink-0 bg-gray-50 flex items-center justify-center relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none md:rounded-bl-lg overflow-hidden">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQELobIByiRk7Q/profile-displayphoto-scale_200_200/B56ZyFnNZbKMAY-/0/1771768177196?e=1773273600&v=beta&t=cH4Yk-lY2mHDuNlYEGPkJtb-QGTZmgLQYuBrDb9P2VA" 
-                                 alt="Harshit Tripathi" 
-                                 class="w-full h-full object-contain md:object-cover">
-                        </div>
-                        <div class="p-4 md:p-8 text-sm flex-1 flex flex-col justify-center">
-                            <h4 class="text-[#003366] text-xl font-bold mb-3 uppercase">Harshit Tripathi</h4>
-                            <div class="space-y-2 text-gray-600">
-                                <p><span class="font-bold text-[#002244]">Batch:</span> 2022-2026</p>
-                                <p><span class="font-bold text-[#002244]">Email:</span> harshtripathi9559@gmail.com</p>
-                                <p><span class="font-bold text-[#002244]">LinkedIn:</span> <a href="https://www.linkedin.com/in/harshit-tripathi-474577259/" class="text-blue-600 hover:text-blue-800 font-semibold hover:underline">View Profile</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-lg flex flex-col md:flex-row shadow-md border border-gray-200 hover:shadow-lg transition-shadow p-0">
-                        <div class="w-full md:w-44 h-64 md:h-auto shrink-0 bg-gray-50 flex items-center justify-center relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none md:rounded-bl-lg overflow-hidden">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQES7AP-fpYdgA/profile-displayphoto-crop_800_800/B56ZyOMIaLJQAM-/0/1771912072419?e=1773273600&v=beta&t=nFiR8nixwMtEmgUQizFpCw-AeQrwBl59ec5Rj-50btM" 
-                                 alt="Vishnu Kumar Pandey" 
-                                 class="w-full h-full object-contain md:object-cover">
-                        </div>
-                        <div class="p-4 md:p-8 text-sm flex-1 flex flex-col justify-center">
-                            <h4 class="text-[#003366] text-xl font-bold mb-3 uppercase">Vishnu Kumar Pandey</h4>
-                            <div class="space-y-2 text-gray-600">
-                                <p><span class="font-bold text-[#002244]">Batch:</span> 2022-2026</p>
-                                <p><span class="font-bold text-[#002244]">Email:</span> vishnuamanpandey@gmail.com</p>
-                                <p><span class="font-bold text-[#002244]">LinkedIn:</span> <a href="https://www.linkedin.com/in/vishnu-kumar-pandey-586417229/" class="text-blue-600 hover:text-blue-800 font-semibold hover:underline">View Profile</a></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-lg flex flex-col md:flex-row shadow-md border border-gray-200 hover:shadow-lg transition-shadow p-0">
-                        <div class="w-full md:w-44 h-64 md:h-auto shrink-0 bg-gray-50 flex items-center justify-center relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none md:rounded-bl-lg overflow-hidden">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQHDreDUE9VB9w/profile-displayphoto-scale_200_200/B56ZuMNx2nHkAY-/0/1767583982908?e=1773273600&v=beta&t=LCy2l_JMokWX5m2fDdYTkcf-SpoPsd-K_7f7Bp5sAWk" 
-                                 alt="Amitesh Singh Patel" 
-                                 class="w-full h-full object-contain md:object-cover">
-                        </div>
-                        <div class="p-4 md:p-8 text-sm flex-1 flex flex-col justify-center">
-                            <h4 class="text-[#003366] text-xl font-bold mb-3 uppercase">Amitesh Singh Patel</h4>
-                            <div class="space-y-2 text-gray-600">
-                                <p><span class="font-bold text-[#002244]">Batch:</span> 2022-2026</p>
-                                <p><span class="font-bold text-[#002244]">Email:</span> asingh10304@gmail.com</p>
-                                <p><span class="font-bold text-[#002244]">LinkedIn:</span> <a href="https://www.linkedin.com/in/amitesh-singh-485669269/" class="text-blue-600 hover:text-blue-800 font-semibold hover:underline">View Profile</a></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-4 border border-blue-50 bg-blue-50/30 rounded-lg">
+                    <span class="block font-bold text-[#003366] text-xs uppercase mb-1">Presidential Office</span>
+                    [cite_start]<p class="text-[11px] text-gray-500">Leading the vision and representing the society[cite: 94, 95, 96].</p>
                 </div>
-            </section>
-
-            <section>
-                <h3 class="text-[#002244] text-lg font-bold uppercase tracking-wide mb-6">
-                    Guided by
-                </h3>
-
-                <div class="bg-white rounded-lg flex flex-col md:flex-row shadow-md border border-gray-200 hover:shadow-lg transition-shadow p-0">
-                    <div class="w-full md:w-44 h-64 md:h-auto shrink-0 bg-gray-50 flex items-center justify-center relative rounded-t-lg md:rounded-l-lg md:rounded-tr-none md:rounded-bl-lg overflow-hidden">
-                        <img src="https://www.iertdegreealumni.in/Director.jpeg" 
-                             alt="Dr. Vimal Mishra" 
-                             class="w-full h-full object-contain md:object-cover">
-                    </div>
-                    <div class="p-4 md:p-8 text-sm flex-1 flex flex-col justify-center">
-                        <h4 class="text-[#003366] text-xl font-bold mb-2">Dr. Vimal Mishra</h4>
-                        <p class="text-gray-500 mb-2 font-medium">Director, IERT Prayagraj</p>
-                       
-                    </div>
+                <div class="p-4 border border-blue-50 bg-blue-50/30 rounded-lg">
+                    <span class="block font-bold text-[#003366] text-xs uppercase mb-1">Secretariats</span>
+                    [cite_start]<p class="text-[11px] text-gray-500">Coordinating technical, cultural, and administrative excellence[cite: 104, 109, 113].</p>
                 </div>
-            </section>
-
+                <div class="p-4 border border-blue-50 bg-blue-50/30 rounded-lg">
+                    <span class="block font-bold text-[#003366] text-xs uppercase mb-1">Treasury</span>
+                    [cite_start]<p class="text-[11px] text-gray-500">Ensuring financial transparency and resource management[cite: 43, 117].</p>
+                </div>
+                <div class="p-4 border border-blue-50 bg-blue-50/30 rounded-lg">
+                    <span class="block font-bold text-[#003366] text-xs uppercase mb-1">Batch Representatives</span>
+                    [cite_start]<p class="text-[11px] text-gray-500">A voice for every batch from First to Final year[cite: 58, 123, 125].</p>
+                </div>
+            </div>
         </div>
     </div>
-</article>
-
-
-
-
-</main>
-
+</section>
 <script>
-    // --- CONFIGURATION ---
-    const menu = document.getElementById("navMenu");
-    const sidebar = document.getElementById("sidebar");
-    
-    // Safety lock variables
-    let isInteracting = false; 
-
-    // --- 1. MAIN HAMBURGER TOGGLE (UPDATED) ---
+    // Your existing toggle function
     function toggleMenu() {
-        // Toggle the visibility of the main navigation container
-        const isMenuHidden = menu.classList.toggle("hidden");
-        
-        // SYNC SIDEBAR & RESET DROPDOWNS
-        if (!isMenuHidden) {
-            // CASE: Menu is OPENING
-            // Hide Sidebar (to maintain clean mobile view)
-            if (sidebar) sidebar.classList.add("hidden");
-        } else {
-            // CASE: Menu is CLOSING
-            // 1. Bring back the sidebar
-            if (sidebar) sidebar.classList.remove("hidden");
-
-            // 2. NEW: Close all internal open dropdowns
-            // This finds every dropdown that has 'mobile-open' and removes it
-            const openDropdowns = document.querySelectorAll('.dropdown-menu.mobile-open');
-            openDropdowns.forEach(dropdown => {
-                dropdown.classList.remove('mobile-open');
-            });
-        }
-        
-        // Safety lock to prevent "double-firing" or immediate closing
-        isInteracting = true;
-        setTimeout(() => {
-            isInteracting = false;
-        }, 500);
+        const menu = document.getElementById("navMenu");
+        menu.classList.toggle("hidden");
     }
 
-    // --- 2. INTERACTION SAFETY LOCK ---
-    if (menu) {
-        menu.addEventListener('click', function(e) {
-            isInteracting = true;
-            setTimeout(() => {
-                isInteracting = false;
-            }, 1000); 
-        });
-    }
-
-    // --- 3. SCROLL AUTO-CLOSE LOGIC ---
+    // NEW: Close the mobile menu automatically on scroll
     window.addEventListener("scroll", function() {
-        if (window.innerWidth < 768 && !menu.classList.contains("hidden") && !isInteracting) {
-            
-            // 1. Close the Main Menu
+        const menu = document.getElementById("navMenu");
+        // If the screen is mobile-sized and the menu is currently open, close it
+        if (window.innerWidth < 768 && !menu.classList.contains("hidden")) {
             menu.classList.add("hidden");
-            
-            // 2. Bring back the Sidebar
-            if (sidebar) sidebar.classList.remove("hidden");
-            
-            // 3. NEW: Also reset internal dropdowns on scroll close
-            const openDropdowns = document.querySelectorAll('.dropdown-menu.mobile-open');
-            openDropdowns.forEach(dropdown => {
-                dropdown.classList.remove('mobile-open');
-            });
         }
     });
 
-    // --- 4. RESIZE HANDLER ---
-    window.addEventListener('resize', function() {
-        if (window.innerWidth >= 768) {
-            // Desktop: Show menu, Show sidebar
-            menu.classList.remove("hidden");
-            if (sidebar) sidebar.classList.remove("hidden");
-            
-            // Optional: Clean up mobile classes if resizing to desktop
-            const openDropdowns = document.querySelectorAll('.dropdown-menu.mobile-open');
-            openDropdowns.forEach(dropdown => {
-                dropdown.classList.remove('mobile-open');
-            });
-        } else {
-            // Mobile: Hide menu by default, Ensure sidebar is visible
-            menu.classList.add("hidden");
-            if (sidebar) sidebar.classList.remove("hidden");
-        }
-    });
-
-    // --- 5. SIDEBAR SCROLL ANIMATION (Desktop Only) ---
+    // Your existing sidebar scroll logic
     document.addEventListener("DOMContentLoaded", function() {
-        if (sidebar) {
-            window.addEventListener("scroll", function() {
-                if (window.innerWidth >= 1024) { 
-                    if (window.scrollY > 150) {
-                        sidebar.classList.remove("lg:w-[300px]", "xl:w-[350px]");
-                        sidebar.classList.add("lg:w-0", "opacity-0", "-translate-x-full");
-                    } else {
-                        sidebar.classList.remove("lg:w-0", "opacity-0", "-translate-x-full");
-                        sidebar.classList.add("lg:w-[300px]", "xl:w-[350px]");
-                    }
-                }
-            });
-        }
+        const sidebar = document.getElementById("sidebar");
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 150) {
+                sidebar.classList.remove("lg:w-[300px]", "xl:w-[350px]");
+                sidebar.classList.add("lg:w-0", "opacity-0", "-translate-x-full");
+            } else {
+                sidebar.classList.remove("lg:w-0", "opacity-0", "-translate-x-full");
+                sidebar.classList.add("lg:w-[300px]", "xl:w-[350px]");
+            }
+        });
     });
+
+    // Your existing auto-slider logic
+    let index = 0;
+    const slides = document.getElementById('slider');
+    function moveSlide() {
+        if(slides) {
+            index = (index + 1) % 2;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+    }
+    setInterval(moveSlide, 5000);
 </script>
+
+   
  <footer class="relative bg-gray-900 text-gray-300 pt-10 pb-6 border-t-4 border-blue-600 overflow-hidden">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none" aria-hidden="true">
             <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
@@ -463,20 +348,21 @@
             <div class="lg:col-span-2">
                 <h5 class="text-xs font-bold mb-4 uppercase tracking-wide text-white">Quick Links</h5>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Home</a></li>
-                    <li><a href="https://iert.ac.in/" class="text-gray-400 hover:text-blue-400 transition-all inline-block">IERT</a></li>
+                    <li><a href="https://iert.ac.in/" class="text-gray-400 hover:text-blue-400 transition-all inline-block">IERT Portal</a></li>
+                    <li><a href="https://aktu.ac.in/" class="text-gray-400 hover:text-blue-400 transition-all inline-block">AKTU Portal</a></li>
                     <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Society Constitution</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Advisory Committe</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Committee Members</a></li>
                 </ul>
             </div>
 
             <div class="lg:col-span-3">
                 <h5 class="text-xs font-bold mb-4 uppercase tracking-wide text-white">Explore</h5>
                 <ul class="space-y-2 text-xs">
+                    <li><a href="homepage.html" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Home</a></li>
                     <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">About Us</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Vision & Mission</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Executive Committee</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Our Team & Committees</a></li>
                     <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-all inline-block">Event Gallery</a></li>
+                    
                 </ul>
             </div>
 
@@ -505,5 +391,6 @@
             <p>Designed & Developed by <span class="text-gray-300 font-bold">Harshit Pandey, Harshit Tripathi & Team</span></p>
         </div>
     </footer>
+
 </body>
 </html>
